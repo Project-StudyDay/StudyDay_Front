@@ -1,5 +1,6 @@
 import logo from './logo.png';
-import './App.css';
+import './app.css';
+import './assets/styles/base/reset.css'
 
 function App() {
   return (
