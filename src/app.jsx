@@ -1,5 +1,5 @@
 import logo from './logo.png';
-import './app.css';
+import './App.css';
 import './assets/styles/base/reset.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
