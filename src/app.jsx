@@ -1,4 +1,3 @@
-import logo from './logo.png';
 import './App.css';
 import './assets/styles/base/reset.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
