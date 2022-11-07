@@ -1,5 +1,5 @@
 import './App.css';
-import './assets/styles/base/reset.css'
+import './assets/styles/base/reset.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import Dday from './pages/Dday';
@@ -9,33 +9,32 @@ import Root from './pages/Root';
 
 const router = createBrowserRouter([
   {
-    path:'/',
+    path: '/',
     element: <Root />,
     errorElement: <p>그런 경로 없습니다</p>,
     children: [
       {
-        index: true, element: <Home />
+        index: true,
+        element: <Home />,
       },
       {
         path: 'd-day',
-        element: <Dday />
+        element: <Dday />,
       },
       {
         path: 'timetable',
-        element: <Timetable />
+        element: <Timetable />,
       },
       {
         path: 'todo-list',
-        element: <Todolist />
-      }
-    ]
-  }
+        element: <Todolist />,
+      },
+    ],
+  },
 ]);
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

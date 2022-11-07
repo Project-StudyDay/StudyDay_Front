@@ -1,12 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar/Navbar';
 
 export default function Root() {
-    return (
-        <div className='root'>
-            <Navbar />
-            <Outlet />
-        </div>
-    );
+  return (
+    <div className="root">
+      <Outlet />
+      <Navbar />
+    </div>
+  );
 }
